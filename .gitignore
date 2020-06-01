@@ -8,7 +8,14 @@ app/build
 /captures
 /node_modules
 *.log
-apks/
+app/
+gradle
+doc
+gradle.properties
+gradlew
+gradlew.bat
+build.gradle
+settings.gradle
 package-lock.json*
 .settings
 .classpath
