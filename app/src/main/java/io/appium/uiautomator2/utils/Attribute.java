@@ -41,6 +41,9 @@ public enum Attribute {
     SELECTION_END(new String[]{"selection-end"}),
     SELECTED(new String[]{"selected"}),
     TEXT(new String[]{"text", "name"}),
+    ACCESSIBILITY_FOCUS(new String[]{"accessibilityFocused"}),
+    DISMISSABLE(new String[]{"dismissable"}),
+    EDITABLE(new String[]{"editable"}),
     // The main difference of this attribute from the preceding one is that
     // it does not replace null values with empty strings
     ORIGINAL_TEXT(new String[]{"original-text"}, false, false),

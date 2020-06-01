@@ -80,6 +80,11 @@ public class UiAutomationElement extends UiElement<AccessibilityNodeInfo, UiAuto
         put(attributes, Attribute.LONG_CLICKABLE, node.isLongClickable());
         put(attributes, Attribute.PASSWORD, node.isPassword());
         put(attributes, Attribute.SCROLLABLE, node.isScrollable());
+
+        put(attributes, Attribute.ACCESSIBILITY_FOCUS, node.isAccessibilityFocused());
+        put(attributes, Attribute.DISMISSABLE, node.isDismissable());
+        put(attributes, Attribute.EDITABLE, node.isEditable());
+
         Range<Integer> selectionRange = AccessibilityNodeInfoHelpers.getSelectionRange(node);
         if (selectionRange != null) {
             attributes.put(Attribute.SELECTION_START, selectionRange.getLower());
